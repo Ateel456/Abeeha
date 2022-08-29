@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+.city{
+    background-color: blueviolet;color: brown;padding: 20px;margin: 20px;border: 4 px solid black; border-radius: 20px;
+}
+.main{ background-color:red;color: aquamarine ;padding: 30px; margin: 50px; border: 4px dotted; border-radius: 50px;}
+.home{margin: 30px; padding: 29px; color: black; background-color:aqua; border-radius: 29px;border: 4 px dashed;}
+.button{ background-color: brown;border: 2px solid black;border-radius: 10px; size: 20px; }
 table,th,td
 {
 border: 1px dotted black;
@@ -130,5 +136,39 @@ tr:hover{background-color:rgb(72, 18, 133);}
 
 
     </table>
+
+    <div class="city">
+        <h2>Landon</h2>
+    
+    </div>
+    <div class="main">
+        <H1> Kashmir</H1>
+        <h2 class="city">Pakistan</h2>
+        <h1 class="home" >India</h1>
+    </div>
+
+    <div class="home">
+        <button class="button" onclick="myFunction()">Hide </button>
+        <button class="button" onclick="myShowFunction()">Show</button>
+    
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("city");
+            for(i = 0; i<x.length; i++){
+                x[i].style.display="none";
+            }
+        }
+    </script>
+
+<script>
+    function myShowFunction(){
+        var x = document.getElementsByClassName("city");
+        for(i = 0; i<x.length; i++){
+            x[i].style.display="block";
+        }
+    }
+</script>
 </body>
 </html>
