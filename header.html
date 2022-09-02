@@ -1,85 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
+    <meta name="viewport" content="width=device-width
     , initial-scale=1.0">
     <title>Document</title>
-    <style> 
-    header{ background-color:brown;
-        color:aqua;
-  padding: 10px;
-    width:250%;
-height:200px;}
-    
-    .pic{
-        float: left;
-        display:inline-block;
-        width:13vw;
-        height:14vw:
-        
-    }
-    .sec{
-        text-align:center;
-        display:block;
+    <style>
+        header {
+            background-color: brown;
+    color: aqua;
+    padding-bottom: 10px;
+    width: 100%;
 
-        
-    }
-    .name{
+        }
 
-      
-        background-color:blueviolet;
-        height:50px;
-        line-height:50px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text_align:center;
-    }
+        .pic {
+    float:left;
+    display: inline-block;
+    width: 14vw;
+    height: 10vw;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-left: 0;
 
-    .Nav{
-        display:inline;
+        }
 
-    }
-    nav ul{
-        list-style: none;
-        padding:0px;;
-        display:flex;
+        .sec {
+            text-align: center;
+            display: block;
 
-        
-    }
-    ul li{padding:20px;
-    font-size:20px;
-text-align:center;
-background-color: orangered;
+
+        }
+
+        .name {
+
+
+            background-color: lightpink;
+    width: 83vw;
+    line-height: 9px;
+    font-family: cursive;
+    display: inline-block;
+        }
+        .name h3{
+            text-align: center;
+            display:block;
+        }
+
+        .Nav {
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        nav ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+
+        }
+
+       nav ul li {
+        padding: 20px;
+    font-size: 1vw;
+    background-color: beige;
+    text-align: center;
 }
 
+.body_section {
 
+}
+.left_sec{
+background-color: lightgreen;
+width:70%;
+display:inline-block;
+
+}
+.pic_div{
+    padding: 10px;
+    background-color: grey;
+    display: inline-block;
+   
+
+}
+.image{
+    border: 2px solid olive;
+    border-radius:5%;
+    width:30%;
+}
+
+.box{
+    background-color: rgb(62, 109, 136);
+    padding: 10px;
+    display:inline-block;
+    width: 26%;
+    border: 2px dashed khaki;
+    border-radius:10%;
+    padding:1vw;
+    margin:1vw;
+    color: rgb(26, 12, 22);
+    text-align: center;
+   overflow: auto;
+    height:20vw;
+
+}
+.box h1{
+    font-size: medium;
+    background-color:rgb(69, 95, 107);
+}
+
+.right{
+    background-color: aqua;
+}
+.right{
+    background-color: rgb(62, 109, 136);
+    width:30%;
+    float: right;
+padding:2wp;
+background-attachment: scroll;
+height:43.1vw;
+overflow: auto;
+    
+
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  display: block;
+}
+
+        
     </style>
 
 </head>
+
 <body>
     <header>
-<div>
-    <img class="pic" src="./images/IMG-20200704-WA0025.jpg">
-</div>
-<div class="name">
-    <h1> First Home Page</h1>
-</div>
+        <div>
+            <img class="pic" src="./images/header.jpg">
+        </div>
+        <div class="name">
+            <h3> Web Design and Development</h3>
+        </div>
 
-<nav class="Nav">
-<ul class="nav_ul">
-    <li><a href=#>Home</a></li>
-    <li><a href="#">Contact Us</li></a>
-    <li><a href="#">Blogs</a></li>
-    <li><a href="#">downloads</a></li>
-    <li><a href="#">Watch </a></li>
-    <li><a href="#">about></a></li>
-   
+        <nav class="Nav">
+            <ul>
+                <li><a href=#>Home</a></li>
+                <li><a href="#">Contact Us</li></a>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">downloads</a></li>
+                <li><a href="#">Watch </a></li>
+                <li><a href="#">about></a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <!--Body section-->
+<div class="body_section">
+                                                    <!--For Left ssection-->
+    <div class="left_sec">
+        <div>
+        <img class="image" src="./images/web pic 1.jpg"  alt=""  width="230px" height="200px" >
+        <img class="image" src="./images/web 2.jpg" alt="" width="230px" height="200px">
+        <img class="image" src="./images/web 3.jpg " alt="" width="230px" height="200px">
+    </div>
+
+    <!--for Box section-->
+    <div>
+        <div class="box">       <!--Box1-->
+           <h1>Web Development</h1>
+           <p>Web Development is the practice of developing websites and web apps that live on the internet.
+            <br> Whether you’re interested in front-end, back-end, or going full-stack,
+             <br>the content in our Web Development domain will help you get there.</p>
+
+        </div>   <!--Box 2-->
+        <div class="box">
+            <h1>Online Web Development Courses</h1>
+            <p>It makes perfect sense that one can learn how to build websites entirely online, especially through online coding boot camps.<br>
+                 From HTML tutorials to in-depth courses in responsive web design that combine HTML, CSS and JavaScript,<br>
+                  individuals can learn the latest client and server-side coding practices.
+                  </p>
+        </div>
+
+
+                   <!--Box 3-->
+        <div class="box">
+        <h1>Jobs in Web Development</h1>
+        <p>Over 5,000 active job postings for web developers existed on Indeed.com at the time of this article, with an estimated average annual salary of over $91K in the United States. The average annual salary for front end web developers is even higher, at $102K. Practically every organization in existence is finding and interacting with people via the web, making the position of web developer one of the most sought after.
+
+           </p>
+           </div>
+    </div>
+
+    </div>
+
+     <!--For Rightside border-->
+
+     <div class="right">
+        <h1>Types of Web Development?</h1>
+        <ul>
+            <li>Front-End Web Development</li>
+            <li>Back-End Web Development.</li>
+            <li>Full-stack Web Development.</li>
+        </ul>
+<h1>Web Development Process Stages</h1>
+<ol>
+    <li><b>Design:</b> This is the fun part. </li>
+    <li><b>Review:</b> Once the team has had some time to work through the design process. </li>
+    <li><b>Develop:</b> Now that the design is approved, it is time for the website to go to the developer</li>
+    <li><b>Test</b></li>
+    <li><b>Launch!</b></li>
+</ol>
+<h1>Rules of web designing?</h1>
+<ul>
+        <li>Focus on the message</li>
+        <li>Keep your layout neat</li>
+        <li>Choose user-friendly fonts</li>
+        <li> Avoid animation hell</li>
+        <li>Make it easy to navigate</li>
 </ul>
 
-</nav>
-</header>
-
-    </header>
+    </div>
+</div>
+<footer>
+    <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
 </body>
+
 </html>
