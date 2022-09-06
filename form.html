@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+*{
+ margin:0;
+ padding:0;
+}
+
+body{
+    background: url(./images/night.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.main{
+    width:40vw;
+    margin:100px auto 0px auto;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 10px;
+    color: rgb(189, 88, 88);
+
+
+}
+h3#com{
+
+    margin-left: 8vw;
+}
+div.register{
+   background: url(./images/web.jpg);
+   background-size: cover;
+    background-color:white;
+    width: 40vw;
+    font-size: 18px;
+    border: 1vw solid rgba(255,255,255,0.3);
+    border-radius : 10%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color:rgb(10, 1, 1);
+
+}
+form#register{
+    margin:4vw;
+}
+
+#input{
+    width:20vw;
+    border: 3% solid rgb(158, 155, 168);
+    height: 2vw;
+    border-radius:3vw;
+    outline: 0;
+    padding:7px;
+    background-color:white;
+    color:black;
+    font-size:medium;
+}
+
+#gender{
+
+    margin:1vw;
+}
+#Qul{
+
+    color:rgb(0, 255, 42);
+    margin-left:8vw;
+}
+.Qualification{
+ width: 10vw;
+ height:2vw;
+ font-size: 1vw;
+ font-family: serif;
+border:none;
+border-radius:3vw;
+margin:1vw;
+padding-left: 1vw;
+padding-right: 1vw;
+border-left: 5px solid black;
+border-right: 5px solid black;
+}
+.University{
+    width: 10vw;
+ height:2vw;
+ font-size: 1vw;
+ font-family: serif;
+border:none;
+border-radius:3vw;
+margin:1vw;
+padding-left: 1vw;
+padding-right: 1vw;
+border-left: 5px solid black;
+border-right: 5px solid black;
+
+
+}
+#hobby{
+    margin-left: 8vw;
+    color: rgb(0, 174, 255);
+}
+textarea{
+    background-color: blanchedalmond;
+    color: black;
+    padding:1vw;
+    margin-left: 5vw;
+}
+
+label{
+    margin-left: 2vw;
+}
+#file{
+    margin-left: 1vw;
+    font-size: medium;
+}
+.btn{
+    background-color:rgb(128, 0, 90);
+    width:15%;
+    color:white;
+    padding:0.5vw;
+    border:none;
+    border-radius: 2vw;
+    font-weight: 600;
+    margin: 2vw;
+}
+    </style>
+</head>
+<body>
+<div class="main"> 
+<div class="register">
+    <br>
+    <br>
+    <br><br>
+
+    <h2>Registeration Form </h2>
+
+    <form id="register" action="thankyou.html">
+        <input type="text" name="Fname" placeholder="Enter First Name " id="input">
+        <br><br>
+        <input type="text" name="Lname" placeholder="Enter Last Name" id="input">
+        <br><br>
+        <input type="email" name="email" placeholder=" Your Email" id="input">
+        <br><br>
+        <input type="number" name="phone Number" placeholder="Your Phone Number" id="input">
+        <br><br>
+        <input type="password" name="Pasword" placeholder="Password" id="input">
+        <br><br>
+        <input type="password" name="confrm pasword" placeholder="Confirm password" id="input">
+        <br><br>
+
+        <input type="date" name="age" placeholder="Date of birth" id="input">
+        <br><br>
+        
+        
+        <h4 id="gender">Gender
+            &nbsp;&nbsp;
+            <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" id="male">
+        &nbsp;&nbsp;
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" id="female"> </h4>
+
+    <h3 id="Qul">Qualification</h3>
+
+
+
+<select class="Qualification" name="area">
+    <option value="">Digree</option>
+<option value="">Intermediate</option>
+<option value="">Bachelor</option>
+<option value="">Masters</option>
+<option value=""> M.phil</option>
+<option value="">Other</option>
+
+<br>
+<br>
+<label for="">Choose File</label>
+<input type="file"  name="photo" id="file">
+<br>
+<br>
+<input  class="btn" type="reset" value="Reset" name="reset">
+<input class="btn" type="submit" value="Submit" name="submit">
+
+</form>
+</div>
+</div>
+
+
+</body>
+</html>
